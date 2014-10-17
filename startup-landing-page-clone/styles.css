@@ -107,6 +107,7 @@ body{
 
 /*INTRODUCTION IMAGE*/
 .introduction{
+	padding-top: 70px;
 	background-image: url(img/first-background.jpg);
 	background-size: cover;
 	height: 37.5em;
@@ -152,15 +153,16 @@ body{
 	padding: 16px 26px;
 	border-radius: 4px;
 	margin-left: 30px;
+	width: 9.688em;
 }
 
 .btnlearn a{
 	transition: background-color 0.5s ease;
-	background-color: red;
+	background-color: #f15a29;
 }
 
 .btnlearn a:hover{
-	background-color: orange;
+	background-color: #b0421e;
 }
 
 .btnwatch{
@@ -178,8 +180,7 @@ body{
 .bobbing-box{
 	width: 50px;
 	height: 50px;
-	margin: 2em auto;
-	background-color: white;
+	margin: 9em auto 1em;
 	-webkit-animation: BOB 1s infinite;
 	animation: BOB 1s infinite;
 
@@ -202,8 +203,8 @@ body{
 
 .cases .devices{
 	display: flex;
-	height: 4em;
 	text-align: center;
+	padding-bottom: 10rem;
 }
 
 .cases h2{
@@ -224,4 +225,64 @@ body{
 
 .cases .devices p{
 	font-size: 1.313em;
+}
+
+/*WHAT IS KARMA BANNER*/
+.description{
+	height: 45.938rem;
+	background-image: url(img/buy-now-bg.jpg);
+	background-size: cover;
+	padding-top: 5.25rem;
+}
+
+.description .col{
+	width: 15rem;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.description h4{
+	font-weight: 400;
+	font-size: 1.563rem;
+	color: #f15a29;
+	margin: 2.5rem 0 1.875rem;
+}
+
+.description p{
+	font-size: 1.15rem;
+	line-height: 1.5;
+	color: #4c5058;
+	margin-bottom: 1.25rem;
+}
+
+.description .btnlearn a{
+	margin-left: 0;
+	padding: 15px 43px;
+}
+
+
+/*FOOTER*/
+.social{
+	background-color: white;
+	text-align: center;
+	padding-bottom: 9.375rem;
+}
+
+.social hr{
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0;
+}
+
+.social .icons li{
+	border-radius: 1.25em;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 1px solid #eaebec;
+	display: inline-block;
+	margin: 1.25rem 5px;
+}
+
+.social .copy{
+	font-size: 0.9rem;
+	color: #838994;
 }
