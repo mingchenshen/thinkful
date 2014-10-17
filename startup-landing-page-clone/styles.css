@@ -1,3 +1,192 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* End of Reset */
+/* Start of Custom Styles */
+.content{
+	box-sizing: border-box;
+	padding: 0 0.5em;
+	width: 60.625em;
+	margin: 0 auto;
+}
+
 body{
 	background-color: grey;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.navigation-bar{
+	background-color: white;
+}
+
+.navigation-bar .content{
+	height: 4.375em;
+}
+
+.navigation-bar .logo{
+	height: 4.375em;
+}
+
+.links > li{
+	display: inline-block;
+	margin-left: 1.5625em;
+}
+
+/*NAVIGATION STYLING*/
+.navigation-bar .links a{
+	transition: color 0.2s ease;
+	color: #838994;
+	text-decoration: none;
+}
+.navigation-bar .links a:visited{
+	color: #838994;
+	text-decoration: none;
+}
+.navigation-bar .links a:hover{
+	color: #333333;
+	text-decoration: none;
+	cursor: pointer;
+}
+.navigation-bar .links a:active{
+	color: #4c5058;
+	text-decoration: none;
+}
+
+.navigation-bar .links{
+	float: right;
+	font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 1em;
+    margin-top: 1.5625em;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navigation-bar .links .active{
+	color: #4c5058;
+	font-weight: 500;
+}
+
+/*INTRODUCTION IMAGE*/
+.introduction{
+	background-image: url(img/first-background.jpg);
+	background-size: cover;
+	height: 37.5em;
+	width: 100%;
+}
+
+.introduction h1{
+	color: white;
+	text-align: center;
+	padding-top: 3.25em;
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+}
+
+.introduction h3{
+	color: white;
+	text-align: center;
+	padding-top: 1em;
+	font-size: 24px;
+	letter-spacing: 0.06em;
+}
+
+.buttons{
+	height: 57px;
+	width: 380px;
+	padding-top: 3em;
+	margin: 0 auto;
+}
+
+.btnlearn{
+	line-height: 1.33;
+	float: left;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.btnlearn a, .btnlearn a:hover{
+	color: white;
+	line-height: 1.33;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 16px 26px;
+	border-radius: 4px;
+	margin-left: 30px;
+}
+
+.btnlearn a{
+	transition: background-color 0.5s ease;
+	background-color: red;
+}
+
+.btnlearn a:hover{
+	background-color: orange;
+}
+
+.btnwatch{
+	position: relative;
+	color: white;
+	line-height: 57px;
+	float: right;
+	font-size: 18px;
+}
+
+.btnwatch img{
+	vertical-align: middle;
+}
+
+.bobbing-box{
+	width: 50px;
+	height: 50px;
+	margin: 2em auto;
+	background-color: white;
+	-webkit-animation: BOB 2s infinite;
+	animation: BOB 2s infinite;
+
+}
+
+@-webkit-keyframes BOB{
+	0%, 100%{transform: translate(0, 0);}
+	50%{transform: translate(0, 1em);}
+}
+
+@keyframes BOB{
+	0%, 100%{transform: translate(0, 0);}
+	50%{transform: translate(0, 1em);}
 }
