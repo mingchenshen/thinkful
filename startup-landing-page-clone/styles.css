@@ -38,18 +38,22 @@ ol, ul {
 .content{
 	box-sizing: border-box;
 	padding: 0 0.5em;
-	width: 60.625em;
+	min-width: 60.625em;
+	width: 60%;
 	margin: 0 auto;
 }
 
 body{
-	background-color: grey;
+	background-color: white;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
 
 .navigation-bar{
 	background-color: white;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 1px 0 0 #838994;
 }
 
 .navigation-bar .content{
@@ -122,7 +126,7 @@ body{
 	color: white;
 	text-align: center;
 	padding-top: 1em;
-	font-size: 24px;
+	font-size: 1.563em;
 	letter-spacing: 0.06em;
 }
 
@@ -176,17 +180,48 @@ body{
 	height: 50px;
 	margin: 2em auto;
 	background-color: white;
-	-webkit-animation: BOB 2s infinite;
-	animation: BOB 2s infinite;
+	-webkit-animation: BOB 1s infinite;
+	animation: BOB 1s infinite;
 
 }
 
 @-webkit-keyframes BOB{
 	0%, 100%{transform: translate(0, 0);}
-	50%{transform: translate(0, 1em);}
+	50%{transform: translate(0, 2em);}
 }
 
 @keyframes BOB{
 	0%, 100%{transform: translate(0, 0);}
-	50%{transform: translate(0, 1em);}
+	50%{transform: translate(0, 2em);}
+}
+
+/*THREE IMAGES IN ROW, LESSON 4 ASS 8*/
+.cases .content{
+	margin-top: 7.875rem;
+}
+
+.cases .devices{
+	display: flex;
+	height: 4em;
+	text-align: center;
+}
+
+.cases h2{
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	text-align: center;
+}
+
+.cases .devices li{
+	width: 33.333333%
+}
+
+.cases .devices h3{
+	font-weight: 400;
+	font-size: 1.563em;
+	margin: 2.5rem 0 1.875rem;
+}
+
+.cases .devices p{
+	font-size: 1.313em;
 }
